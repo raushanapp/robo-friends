@@ -4,6 +4,10 @@ RoboFriends is a React 19 and TypeScript single-page app built with Vite. It
 fetches users from JSONPlaceholder, shows them as RoboHash cards, and filters
 the list by name.
 
+## Live demo
+
+View the deployed app here: [RoboFriends](https://raushanapp.github.io/robo-friends/)
+
 ## Quick start
 
 Requires Node.js `^20.19.0` or `>=22.12.0` and pnpm.
