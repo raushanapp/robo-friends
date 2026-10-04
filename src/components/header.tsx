@@ -20,12 +20,12 @@ class Header extends React.Component<Record<string, never>, HeaderState> {
     // console.log("Header rendered");
     return (
       <header className="headers">
+        <h1>RoboFriends</h1>
         <CounterButtons
           color="lightblue"
           count={this.state.count}
           handleCount={this.counterUpdate}
         />
-        <h1>RoboFriends</h1>
       </header>
     );
   }
