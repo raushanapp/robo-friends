@@ -1,6 +1,6 @@
-const CACHE_NAME = "hooks-app-v1";
+const CACHE_NAME = "robo-friends-app-v1";
 
-const APP_SHELL = ["/", "/index.html"];
+const APP_SHELL = [BASE, `${BASE}index.html`, `${BASE}manifest.json`];
 
 // Install
 self.addEventListener("install", (event) => {
