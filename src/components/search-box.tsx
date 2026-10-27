@@ -9,6 +9,7 @@ const SearchBox = ({
   return (
     <section className="search-box">
       <input
+        aria-label="Search Robots"
         type="search"
         placeholder="search robots"
         onChange={searchChange}

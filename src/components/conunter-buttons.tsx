@@ -9,13 +9,6 @@ const CounterButtons = ({
   count: number;
   handleCount: () => void;
 }) => {
-  //   const [count, setCount] = React.useState(0);
-  //   const updateCount = (value: number) => {
-  //     setCount(count + value);
-  //   };
-
-  //   console.log("CounterButtons rendered");
-
   return (
     <section>
       <button style={{ backgroundColor: color }} onClick={handleCount}>
