@@ -43,9 +43,7 @@ class App extends React.Component<PropsFormRedux> {
 
     return isPending ? (
       <h1>Loading...</h1>
-    ) : error ? (
-      <h1>{error}</h1>
-    ) : (
+    ) : !error ? (
       <section className="app">
         <Header />
         <SearchBox searchChange={this.onSearchChange} />
@@ -53,6 +51,8 @@ class App extends React.Component<PropsFormRedux> {
           <CardList robos={filteredRobots} />
         </Scroll>
       </section>
+    ) : (
+      <h1>{error}</h1>
     );
   }
 }
