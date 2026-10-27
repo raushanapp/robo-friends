@@ -1,5 +1,5 @@
 const CACHE_NAME = "robo-friends-app-v1";
-
+const BASE = "/robo-friends/";
 const APP_SHELL = [BASE, `${BASE}index.html`, `${BASE}manifest.json`];
 
 // Install

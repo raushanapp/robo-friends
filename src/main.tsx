@@ -8,6 +8,7 @@ import { store } from "../src/store/store.ts";
 // Check for browser support of service workers
 if ("serviceWorker" in navigator) {
   window.addEventListener("load", () => {
+    console.log("Registering service worker...", import.meta.env.BASE_URL);
     navigator.serviceWorker
       .register(`${import.meta.env.BASE_URL}sw.js`)
       .then((registration) => {
