@@ -9,15 +9,11 @@ class Header extends React.Component<Record<string, never>, HeaderState> {
     count: 0,
   };
 
-  //   shouldComponentUpdate(): boolean {
-  //     return false;
-  //   }
   counterUpdate = () => {
     this.setState({ count: this.state.count + 1 });
   };
 
   render() {
-    // console.log("Header rendered");
     return (
       <header className="headers">
         <h1>RoboFriends</h1>

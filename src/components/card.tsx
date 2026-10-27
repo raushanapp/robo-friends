@@ -11,7 +11,7 @@ interface CardProps {
 const Card: React.FC<CardProps> = ({ name, email, id }) => {
   return (
     <section className="card grow">
-      <img alt="robots" src={`https://robohash.org/${id}?size=180x180`} />
+      <img alt="robots" src={`https://robohash.org/${id}?size=190x190`} />
       <article>
         <h2>Name: {name}</h2>
         <p>Email: {email}</p>
