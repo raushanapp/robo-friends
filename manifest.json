@@ -1,20 +1,25 @@
 {
-  "name": "robo-friends",
+  "id": "./",
+  "name": "Robo Friends",
   "short_name": "RoboFriends",
-  "start_url": "/robo-friends/",
+  "description": "Find and search through a directory of Robo Friends.",
+  "start_url": "./",
+  "scope": "./",
   "icons": [
     {
-      "src": "",
+      "src": "./web-app-manifest-192x192.png",
       "sizes": "192x192",
-      "type": "image/png"
+      "type": "image/png",
+      "purpose": "any"
     },
     {
-      "src": "",
+      "src": "./web-app-manifest-512x512.png",
       "sizes": "512x512",
-      "type": "image/png"
+      "type": "image/png",
+      "purpose": "any"
     }
   ],
   "display": "standalone",
   "background_color": "#ffffff",
-  "theme_color": "#000000"
+  "theme_color": "#ffffff"
 }
