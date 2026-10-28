@@ -1,4 +1,4 @@
-const CACHE_NAME = "robo-friends-v3";
+const CACHE_NAME = "robo-friends-v4";
 const APP_SCOPE = new URL(self.registration.scope);
 const ROBOTS_API = "https://jsonplaceholder.typicode.com/users";
 const ROBOHASH_ORIGIN = "https://robohash.org";
