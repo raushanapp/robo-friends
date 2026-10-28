@@ -156,7 +156,6 @@ robo-friends/
 
 - Search is currently limited to the user's `name` field.
 - The app is a frontend-only project; it does not include a backend or database.
-- The service worker is intentionally simple and caches the core app shell; it does not implement advanced cache versioning or offline API responses.
+- After the app has loaded online once, its service worker caches the app shell, assets, robot data, and robot avatars so the app remains usable offline. The robot list still requires an initial successful online visit to be available offline.
 - `Button` and `useCount` exist as example pieces and are not connected to the main RoboFriends page.
 - The deployment is handled through the GitHub Pages workflow configured with `gh-pages`.
-

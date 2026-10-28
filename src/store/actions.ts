@@ -15,10 +15,19 @@ export const setSearchField = (text: string) => {
 
 export const requestRobots = () => async (dispatch: AppDispatch) => {
   dispatch({ type: REQUEST_ROBOTS_PENDING });
-  fetch("https://jsonplaceholder.typicode.com/users")
-    .then((response) => response.json())
-    .then((data) => dispatch({ type: REQUEST_ROBOTS_SUCCESS, payload: data }))
-    .catch((error) =>
-      dispatch({ type: REQUEST_ROBOTS_FAILED, payload: error.message }),
-    );
+
+  try {
+    const response = await fetch("https://jsonplaceholder.typicode.com/users");
+    if (!response.ok) {
+      throw new Error(`Failed to load robots: ${response.status}`);
+    }
+
+    const robots = await response.json();
+    dispatch({ type: REQUEST_ROBOTS_SUCCESS, payload: robots });
+  } catch (error) {
+    dispatch({
+      type: REQUEST_ROBOTS_FAILED,
+      payload: error instanceof Error ? error.message : "Failed to load robots.",
+    });
+  }
 };

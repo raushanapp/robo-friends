@@ -47,12 +47,13 @@ export const requestRobotsReducer = (
 ): RequestRobotsState => {
   switch (action.type) {
     case REQUEST_ROBOTS_PENDING: {
-      return Object.assign({}, state, { isPending: true });
+      return Object.assign({}, state, { isPending: true, error: null });
     }
     case REQUEST_ROBOTS_SUCCESS: {
       return Object.assign({}, state, {
         robots: action.payload,
         isPending: false,
+        error: null,
       });
     }
     case REQUEST_ROBOTS_FAILED: {
