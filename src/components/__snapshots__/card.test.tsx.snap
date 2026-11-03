@@ -2,49 +2,6 @@
 
 exports[`Card Component > should render the Card Component with snapshorts 1`] = `
 {
-  "asFragment": [Function],
-  "baseElement": <body>
-    <div>
-      <section
-        class="card grow"
-      >
-        <img
-          alt="robots"
-          src="https://robohash.org/1?size=190x190"
-        />
-        <article>
-          <h2>
-            Name: 
-            Test Name
-          </h2>
-          <p>
-            Email: 
-            test@example.com
-          </p>
-        </article>
-      </section>
-    </div>
-  </body>,
-  "container": <div>
-    <section
-      class="card grow"
-    >
-      <img
-        alt="robots"
-        src="https://robohash.org/1?size=190x190"
-      />
-      <article>
-        <h2>
-          Name: 
-          Test Name
-        </h2>
-        <p>
-          Email: 
-          test@example.com
-        </p>
-      </article>
-    </section>
-  </div>,
   "debug": [Function],
   "findAllByAltText": [Function],
   "findAllByDisplayValue": [Function],
@@ -78,6 +35,7 @@ exports[`Card Component > should render the Card Component with snapshorts 1`] =
   "getByTestId": [Function],
   "getByText": [Function],
   "getByTitle": [Function],
+  "logTestingPlaygroundURL": [Function],
   "queryAllByAltText": [Function],
   "queryAllByDisplayValue": [Function],
   "queryAllByLabelText": [Function],
@@ -94,7 +52,5 @@ exports[`Card Component > should render the Card Component with snapshorts 1`] =
   "queryByTestId": [Function],
   "queryByText": [Function],
   "queryByTitle": [Function],
-  "rerender": [Function],
-  "unmount": [Function],
 }
 `;

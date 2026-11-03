@@ -11,7 +11,8 @@ const renderCardComponent = () => render(<Card {...props} />);
 
 describe("Card Component", () => {
   it("should render the Card Component with snapshorts", () => {
-    expect(renderCardComponent()).toMatchSnapshot();
+    renderCardComponent();
+    expect(screen).toMatchSnapshot();
   });
   it("should render the Card Component with correct content", () => {
     renderCardComponent();

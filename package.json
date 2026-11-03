@@ -12,6 +12,7 @@
     "deploy": "gh-pages -d dist",
     "test": "vitest",
     "test:run": "vitest run",
+    "test:update": "vitest run -u",
     "test:ui": "vitest --ui",
     "test:coverage": "vitest run --coverage"
   },

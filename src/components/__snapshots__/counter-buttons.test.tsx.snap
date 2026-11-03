@@ -1,0 +1,13 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`Counter Buttons component > renders and matches the snapshot 1`] = `
+<DocumentFragment>
+  <section>
+    <button
+      style="background-color: red;"
+    >
+      count :0
+    </button>
+  </section>
+</DocumentFragment>
+`;
