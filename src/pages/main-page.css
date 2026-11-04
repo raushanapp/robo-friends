@@ -1,0 +1,30 @@
+.app {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 30px;
+}
+.headers {
+  padding: 0;
+  margin: 0;
+}
+.robo-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  gap: 30px;
+  padding-bottom: 50px;
+}
+
+h1 {
+  font-family: "Segoe UI", sans-serif;
+  font-size: 2.5rem;
+  font-weight: normal;
+  text-align: center;
+  font-style: normal;
+  color: rgb(82, 136, 136);
+}

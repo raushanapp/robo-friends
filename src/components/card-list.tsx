@@ -1,6 +1,7 @@
 import React from "react";
 import "../App.css";
-import Card from "../components/card";
+import Card from "./card";
+import { withErrorBoundary } from "./with-error-boundary";
 
 interface roboListItem {
   id: number;
@@ -12,7 +13,7 @@ interface CardListProps {
   robos: roboListItem[];
 }
 
-const CardList: React.FC<CardListProps> = ({ robos }) => {
+const CardListComponent: React.FC<CardListProps> = ({ robos }) => {
   return (
     <section className="robo-container scroll-hide">
       {robos?.map((r) => {
@@ -22,4 +23,6 @@ const CardList: React.FC<CardListProps> = ({ robos }) => {
   );
 };
 
-export default CardList;
+const CardListWithErrorBoundary = withErrorBoundary(CardListComponent);
+
+export default CardListWithErrorBoundary;
