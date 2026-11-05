@@ -1,6 +1,6 @@
 // Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
 
-exports[`MainPage > render Main page Snapshot 1`] = `
+exports[`MainPage > render Main page without crashing 1`] = `
 {
   "debug": [Function],
   "findAllByAltText": [Function],
